@@ -13,7 +13,7 @@ java -jar omc-decoder.jar -i cscfeature.xml -o cscfeature_decoded.xml
 or try to decode all .xml files under a directory
 
 ``` shell
-java -jar omc-decoder.jar -i omc -o omc_decoded.xml
+java -jar omc-decoder.jar -i omc -o omc_decoded
 ```
 
 encode
@@ -25,7 +25,7 @@ java -jar omc-decoder.jar -e -i cscfeature_decoded.xml -o cscfeature.xml
 or try to encode all .xml files under a directory
 
 ``` shell
-java -jar omc-decoder.jar -e -i omc_decoded -o omc_encoded.xml
+java -jar omc-decoder.jar -e -i omc_decoded -o omc_encoded
 ```
 
 ## How To Build
