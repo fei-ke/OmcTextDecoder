@@ -81,7 +81,10 @@ public class Entrance {
             if (outputFile.exists()) {
                 outputFile.delete();
             }
-            outputFile.getParentFile().mkdirs();
+            File parentFile = outputFile.getParentFile();
+            if (parentFile != null) {
+                parentFile.mkdirs();
+            }
             outputFile.createNewFile();
 
             FileOutputStream outputStream = new FileOutputStream(outputFile);
