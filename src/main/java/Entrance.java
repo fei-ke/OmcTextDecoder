@@ -66,10 +66,6 @@ public class Entrance {
     private static void decodeFile(File inputFile, File outputFile, boolean decode) {
         try {
             String path = inputFile.getAbsolutePath();
-            if (!path.endsWith(".xml")) {
-                //not xml file, ignored
-                return;
-            }
 
             byte[] bytes;
             if (decode)
